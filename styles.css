@@ -1,5 +1,7 @@
 /* Reset defaults */
-* {
+* {</body>
+</html>
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +22,7 @@ body, html {
 
 
   /* Background image */
-  background-image: url("pexels-jess-vide-4321799.jpg"); /*  image file */
+  background-image: url("pexels-jess-vide-4321799.jpg"); /*  image credit-Jess Loiterton 'pixels'*/
   background-size: cover;    /* makes the image fill the screen */
   background-position: center;
   background-repeat: no-repeat;
@@ -95,4 +97,104 @@ body, html {
 .form button:hover {
   background: #4ecdc4;
   color: #fff;
+}
+
+
+
+
+
+/* divider*/ 
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #edf2f7;
+}
+
+
+
+
+/* Social row */
+.social-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  Login
+  or continue with
+  Sign in with Google
+  Sign in with Instagram
+  Sign in with Twitter
+  Sign in with Facebook
+  
+}
+
+.social-btn {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  background: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.social-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.google {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.social-btn:hover {
+  box-shadow: 0 6px 20px rgba(11, 132, 255, 0.06);
+  transform: translateY(-2px);
+  transition: all 0.14s ease;
+}
+
+/* Responsive */
+
+
+@media (max-width: 380px) {
+  .login-card {
+    width: 100%;
+  }
+  .social-row {
+    flex-direction: column;
+  }
+  .social-btn {
+    width: 100%;
+  }
+}
+
+/* Accessibility helper */
+
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: -1px;
 }
