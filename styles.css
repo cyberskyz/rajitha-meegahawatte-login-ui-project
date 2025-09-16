@@ -100,9 +100,6 @@ body, html {
 }
 
 
-
-
-
 /* divider*/ 
 .divider {
   display: flex;
@@ -141,7 +138,7 @@ body, html {
   flex: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-arou;
   gap: 8px;
   height: 44px;
   border-radius: 8px;
@@ -170,7 +167,6 @@ body, html {
 }
 
 /* Responsive */
-
 
 @media (max-width: 380px) {
   .login-card {
