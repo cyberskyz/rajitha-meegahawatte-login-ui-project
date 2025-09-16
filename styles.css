@@ -1,10 +1,5 @@
 /* Reset defaults */
-* {</body>
-</html>
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
   font-family: Arial, sans-serif;
 }
 
@@ -79,9 +74,10 @@ body, html {
 
 .form input:focus {
   border-color: #74ebd5;
+  background-color: #4ecdc4;
 }
 
-/* Button */
+/* login Button */
 .form button {
   flex: 0 0 auto;
   background: #74ebd5;
@@ -125,12 +121,6 @@ body, html {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  Login
-  or continue with
-  Sign in with Google
-  Sign in with Instagram
-  Sign in with Twitter
-  Sign in with Facebook
   
 }
 
@@ -156,10 +146,6 @@ body, html {
   display: block;
 }
 
-.google {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
 .social-btn:hover {
   box-shadow: 0 6px 20px rgba(11, 132, 255, 0.06);
   transform: translateY(-2px);
@@ -182,7 +168,6 @@ body, html {
 
 /* Accessibility helper */
 
-
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -194,3 +179,4 @@ body, html {
   padding: 0;
   margin: -1px;
 }
+
